@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe</title>
+    <style>
+        span{
+            background-color: rgb(209, 209, 209);
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            border: 1px solid black;
+            display: block;
+            
+        }
+        div{
+            background-color: rgb(209, 209, 209);
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        div:hover{
+            background-color: brown;
+        }
+        a:hover{
+            color: rgb(255, 207, 50);
+        }
+
+        div > p {
+            display: none;
+        }
+        div > img {
+            display: none;
+        }
+        div:hover > img {
+            display: block;
+
+        }
+        #d2{
+            color: rgb(13, 231, 202);
+            background-color: black;
+        }
+
+        
+        div:hover > p{
+            display: block;
+            color: aliceblue;
+            background-color: rgb(3, 3, 3);
+        }
+
+
+    </style>
+</head>
+<body>
+<span>
+    a1
+
+</span>
+<div id="d1">
+    01
+    <p>Paragrafo escondido</p>
+    
+</div>
+<div id="d2">
+    02
+    <img src="imagens/275384445_120709177207019_8105363452924528252_n.jpg" width="200px" alt="imagem do estrondo!!">
+</div>
+<div id="d3">03</div>
+<p><a href="links.html" target="_blank">Passa o mouse aqui</a></p>
+<p>luz</p>
+</body>
+</html>
