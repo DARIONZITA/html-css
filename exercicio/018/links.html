@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        a{
+            color: rgb(70, 121, 3);
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: blue;
+        }
+        .especifico:hover{
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .especifico::before{
+            content:">>" ;
+            font-weight: lighter;
+        }
+
+        .especifico::after{
+            content: "<<";
+            font-weight: lighter;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.chess.com/" target="_blank" class="especifico">Chess</a></li>
+    </ul>
+    
+</body>
+</html>
