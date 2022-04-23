@@ -1,19 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Formulário do cifra club</title>
     <style>
-   
+        a{
+            color: rgb(236, 161, 0);
+            text-decoration: none;
+        }
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            box-shadow: 1px 1px 3px black;
+            padding: 20px;
+            border-radius: 4%;
+            background-color: rgb(237, 250, 252);
+            font-weight: bold;
+
+        }
+        main{
+            max-width: 450px;
+            width: 100%;
+            margin: auto; 
+        }
+        input{
+            
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            padding: 12px;
+        }
+        input[type="submit"]{
+            margin-bottom: 5px;
+            background-color: Teal;
+        }
+        input:hover{
+            border-color: aquamarine;
+            background-color: rgb(238, 238, 238);
+        }
+        input:active{
+            border:none;
+        }
+        .same{
+            display: inline-block;
+        }
+        #name , #e-mail , #cadastro{
+            width: 95%;
+        }
+    
+        .acordo{
+            font-weight: normal;
+            font-size: medium;
+        }
+        p{
+            text-align: center;
+        }
+
     </style>
 </head>
-<body>
-    <div>
+<body>  
+    <main>
         <form action="#">
-            <fieldset></fieldset>
-            <input type="radio" value="">
+            <h1>Cadastre-se</h1>
+            <fieldset>
+                <div>
+                    <label for="name">Nome Completo</label>
+                    <br>
+                    <input type="text" id="name" required>
+                </div>
+        
+                <div>
+                    <label for="e-mail">E-mail </label>
+                    <br>
+                    <input type="email" id="e-mail">
+                </div>
+                <div>        
+                    <div class="same" id="s1">
+                        <label for="senha">Senha</label>
+                        <br>
+                        <input type="password" minlength="8" id="senha" >
+                    </div>
+                    <div class="same" id="s2"> 
+                        <label for="rsenha">Repetir Senha</label>
+                        <br>
+                        <input type="password" minlength="8" id="rsenha">
+                    </div>
+                </div>
+                <div>
+                    <label for="date">Data de nascimento</label>
+                    <br>
+                    <input type="date" id="date">
+                </div>
+                <div class="acordo">
+                    <input type="checkbox" name="" id="acordo">
+                    <label for="acordo">Li e aceito os <a href="rs.html" target="_blank">termos de uso do cifra club ID</a></label>
+                </div>
+                <div>
+                    <input type="submit" id="cadastro" value="Enviar cadastro">
+                    <br>
+                    <p><small>Ou <a href="#">acesse sua conta</small></p>
+                </div>
+            </fieldset>
         </form>
-    </div>
+    </main>
+    
 </body>
 </html>
